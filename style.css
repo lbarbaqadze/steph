@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+.outter{
+    height: 30px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+}
+
+.inner{
+    border-left: 5px solid purple;
+    border-right: 5px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: wid 8s linear infinite;
+    font-size: 40px;
+    position: absolute;
+}
+.inner::before{
+    content: "";
+    position: relative;
+    font-family: cursive;
+    animation: bdrWdh 8s linear infinite;
+}
+@keyframes bdrWdh {
+    1%{
+        content: "💜";
+    }
+    18%{
+        content: "💜";
+    }
+    19%{
+        content: "I 💜 You";
+    }
+    62%{
+        content: "I Love You Steph";
+    }
+    81%{
+        content: "I 💜 You";
+    }
+    88%{
+        content: "💜";
+    }
+    100%{
+        content: "💜";
+    }
+}
+@keyframes wid {
+    1%{
+        width: 80px;
+    }
+    19%{
+        width: 180px;
+    }
+    62%{
+        width: 400px;
+    }
+    81%{
+        width: 180px;
+    }
+    100%{
+        width: 80px;
+    }
+}
